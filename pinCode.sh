@@ -1,8 +1,7 @@
 #!/bin/bash -x
 
-pattern="^[0-9]{6}$"
-pin="A00088"
-
+pattern="^[0-9]{6}"
+read -p "Enter the pin " pin
 if [[ $pin =~ $pattern ]]
 then
 	echo "Correct"
